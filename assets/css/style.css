@@ -481,7 +481,7 @@ button {
 }
 
 .skills .container {
-    background: #f55d1b86;
+    background: var(--main-color);
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
@@ -492,7 +492,7 @@ button {
 
 .skills .container .row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
 }
@@ -520,12 +520,16 @@ button {
     margin-top: 1rem;
 }
 
-.skills .container .bar .info .span{
+.skills .container .bar .info span{
+    color: #fff;
     font-size: 2rem;
     font-weight: 500;
     margin-left: 0.5rem;
 }
 
+#round {
+    border-radius: 16px;
+}
 
 @media screen and (max-width:600px) {
     .skills .container {
